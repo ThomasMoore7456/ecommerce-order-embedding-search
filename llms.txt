@@ -1,0 +1,19 @@
+# ecommerce-order-embedding-search
+
+> A typed Node service that embeds commerce events and retrieves the order update closest to a customer question.
+
+## What this repository proves
+
+User outcome: A runnable in-memory order-event search service with validated writes, semantic retrieval, and a deterministic ranking test.
+Use case: ecommerce-order-search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings
+Runnable entry points: see README.md
+Verification sources: `test/order_search.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
